@@ -1,31 +1,15 @@
 ## The following pair of functions cache or eventually compute the inverse of a matrix
 ## 
-## The first function, makeCacheMatrix creates a special "matrix", it is actually a list containing a function to
-## set the value of the matrix
-## get the value of the matrix
-## set the value of the inverse of the matrix
-## get the value of the mean
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## The first function "makeCacheMatrix" creates a special "matrix" object that is able to cache its inverse.
 ## But, beforehand, the function checks to see if that inverse has already been calculated. If so, it gets
 ## that inverse and does not perform any computation. If not, it performs the inverse of the matrix and sets it in the cache
 ## by means of the "setinverse function".
 ## 
+## Actually the function a list containing a function to
+## set the value of the matrix
+## get the value of the matrix
+## set the value of the inverse of the matrix
+## get the value of the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         mat <- NULL
